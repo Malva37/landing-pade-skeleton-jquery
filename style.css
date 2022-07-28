@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+menu {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+    width: 60%;
+}
+
+menu>a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-shadow: -1px 1px 20px;
+}
+
+menu>a.active {
+    text-shadow: 0px -20px 6px;
+}
+
+menu>a:hover {
+    text-shadow: 0px -20px 6px;
+}
+
+.block {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: 1;
+}
+
+#home {
+    background-color: rgb(214, 154, 205);
+}
+
+#about {
+    background-color: rgb(255, 127, 182);
+}
+
+#skills {
+    background-color: rgb(212, 139, 233);
+}
+
+#works {
+    background-color: rgb(223, 108, 162);
+}
+
+#contact {
+    background-color: rgb(171, 59, 223);
+
+}
+
+.block>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 48px;
+    color: rgb(155, 25, 11);
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+
+}
+
+.dots {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 12%;
+    position: fixed;
+    top: 40%;
+    left: 98%;
+    z-index: 2;
+
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.active.dot {
+    transform: scale(1.7);
+    background-color: white;
+}
+
+.dot:hover {
+    transform: scale(1.7);
+    background-color: white;
+    transition-duration: 1s;
+
+}
